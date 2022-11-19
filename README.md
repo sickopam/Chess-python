@@ -9,4 +9,4 @@ Start with running the server file with 'python server.py'. Then open two new te
 Make sure to not rush your moves, just like a normal chess game. Rushing your moves will cause the program to crash and you have to run the program again.
 
 # Credits
-This program was made by <a href='https://github.com/techwithtim'>techwithtim</a>. I, Naufal, along with my colleagues, Alfi and Rifki, only made a few changes to try and improve the speed of the program.
+This program was made by <a href='https://github.com/techwithtim'>techwithtim</a>. I, Naufal, along with my colleagues, Alfi and Rifki, only made a few changes to try and improve the speed and efficiency of the program.
