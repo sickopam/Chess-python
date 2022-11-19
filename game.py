@@ -44,7 +44,7 @@ import pickle
 pygame.font.init()
 
 board = pygame.transform.scale(pygame.image.load(os.path.join("img","board_alt.png")), (750, 750))
-chessbg = pygame.image.load(os.path.join("img", "chessbg.png"))
+chessbg = pygame.transform.scale(pygame.image.load(os.path.join("img", "chessbg.jpeg")), (750, 750))
 rect = (113,113,525,525)
 
 turn = "w"
