@@ -1,5 +1,5 @@
-import pygame
 import os
+import pygame
 
 b_bishop = pygame.image.load(os.path.join("img", "black_bishop.png"))
 b_king = pygame.image.load(os.path.join("img", "black_king.png"))
