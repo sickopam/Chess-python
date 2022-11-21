@@ -57,7 +57,7 @@ def menu_screen(win, name):
 
     while run:
         win.blit(chessbg, (0,0))
-        small_font = pygame.font.SysFont("comicsans", 50)
+        small_font = pygame.font.SysFont("timesnewroman", 50)
         
         if offline:
             off = small_font.render("Server Offline, Try Again Later...", 1, (255, 0, 0))
@@ -94,7 +94,7 @@ def redraw_gameWindow(win, bo, p1, p2, color, ready):
     if int(p2%60) < 10:
         formatTime2 = formatTime2[:-1] + "0" + formatTime2[-1]
 
-    font = pygame.font.SysFont("comicsans", 30)
+    font = pygame.font.SysFont("timesnewroman", 30)
     try:
         txt = font.render(bo.p1Name + "\'s Time: " + str(formatTime2), 1, (255, 255, 255))
         txt2 = font.render(bo.p2Name + "\'s Time: " + str(formatTime1), 1, (255,255,255))
@@ -114,12 +114,12 @@ def redraw_gameWindow(win, bo, p1, p2, color, ready):
         show = "Waiting for Player"
         if color == "s":
             show = "Waiting for Players"
-        font = pygame.font.SysFont("comicsans", 80)
+        font = pygame.font.SysFont("timesnewroman", 80)
         txt = font.render(show, 1, (255, 0, 0))
         win.blit(txt, (width/2 - txt.get_width()/2, 300))
 
     if not color == "s":
-        font = pygame.font.SysFont("comicsans", 30)
+        font = pygame.font.SysFont("timesnewroman", 30)
         if color == "w":
             txt3 = font.render("YOU ARE WHITE", 1, (255, 0, 0))
             win.blit(txt3, (width / 2 - txt3.get_width() / 2, 10))
@@ -139,7 +139,7 @@ def redraw_gameWindow(win, bo, p1, p2, color, ready):
 
 def end_screen(win, text):
     pygame.font.init()
-    font = pygame.font.SysFont("comicsans", 80)
+    font = pygame.font.SysFont("timesnewroman", 80)
     txt = font.render(text,1, (255,0,0))
     win.blit(txt, (width / 2 - txt.get_width() / 2, 300))
     pygame.display.update()
